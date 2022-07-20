@@ -43,7 +43,7 @@ app.post('/api/create', async (req, res) => {
     }
 
     res.json({
-        link: 'https://comame.xyz/r/' + name
+        link: 'https://s.comame.xyz/' + name
     })
 })
 
