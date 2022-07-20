@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Shortlink</title>
+</head>
+<body>
+    <form>
+        <label>Name: <input id='name' placeholder='OPTIONAL'></label>
+        <label>URL: <input id='url' required placeholder='https://'></label>
+        <button id='register'>Register</button>
+    </form>
+
+    <form>
+        <label>Result: <input id='result' readonly></label>
+        <div id='qrcode'></div>
+    </form>
+
+    <footer><a href='./license.txt'>license.txt</a></footer>
+
+    <script src='./lib/qrcode.min.js'></script>
+    <script src='./browser.js'></script>
+
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0.3em;
+            right: 0.3em;
+        }
+    </style>
+</body>
+</html>
